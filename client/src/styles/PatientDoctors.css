@@ -1,0 +1,71 @@
+.patient-doctors{
+    padding:40px;
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+.doctor-page-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.doctor-page-title h1{
+    color:#0d6efd;
+}
+
+.doctor-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.doctor-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.doctor-card:hover{
+    transform:translateY(-6px);
+}
+
+.doctor-image{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.doctor-card h2{
+    margin-bottom:15px;
+}
+
+.doctor-card p{
+    color:#555;
+    margin:12px 0;
+}
+
+.book-btn{
+    width:100%;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.book-btn:hover{
+    background:#084298;
+}

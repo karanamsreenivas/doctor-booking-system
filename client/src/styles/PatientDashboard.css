@@ -1,0 +1,55 @@
+.patient-dashboard{
+    min-height:100vh;
+    background:#f4f7fb;
+    padding:40px;
+}
+
+.patient-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.patient-header h1{
+    color:#1e3a8a;
+    font-size:40px;
+}
+
+.patient-header p{
+    color:#555;
+    margin-top:10px;
+}
+
+.patient-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.patient-card{
+    background:white;
+    text-decoration:none;
+    color:#222;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.patient-card:hover{
+    transform:translateY(-8px);
+}
+
+.card-icon{
+    font-size:60px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.patient-card h2{
+    margin-bottom:15px;
+}
+
+.patient-card p{
+    color:#666;
+}

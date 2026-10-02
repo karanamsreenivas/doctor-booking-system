@@ -1,0 +1,13 @@
+{
+  "name": "book-a-doctor",
+  "version": "1.0.0",
+  "description": "MERN Stack Doctor Appointment Booking System",
+  "private": true,
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "install-all": "cd client && npm install && cd ../server && npm install"
+  },
+  "author": "Thimme Gowd",
+  "license": "MIT"
+}

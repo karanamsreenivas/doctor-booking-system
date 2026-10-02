@@ -1,0 +1,211 @@
+.doctor-layout{
+    display:flex;
+    min-height:100vh;
+    background:#f4f7fb;
+}
+
+.doctor-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.doctor-container{
+    padding:30px;
+}
+
+.doctor-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.doctor-header h2{
+    color:#1f2937;
+    font-size:30px;
+    font-weight:700;
+}
+
+.add-btn{
+    width:180px;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    background:#0b5ed7;
+}
+
+.doctor-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.doctor-table thead{
+    background:#0d6efd;
+    color:white;
+}
+
+.doctor-table th{
+    padding:16px;
+    text-align:left;
+    font-size:16px;
+}
+
+.doctor-table td{
+    padding:16px;
+    border-bottom:1px solid #ececec;
+}
+
+.doctor-table tbody tr:hover{
+    background:#f8fbff;
+}
+
+.edit-btn{
+    background:#ffc107;
+    color:#000;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:10px;
+    font-weight:600;
+}
+
+.edit-btn:hover{
+    background:#e0a800;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.delete-btn:hover{
+    background:#bb2d3b;
+}
+
+@media(max-width:1000px){
+
+.doctor-table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.doctor-header{
+    flex-direction:column;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.add-btn{
+    width:100%;
+}
+
+}
+/* ===========================
+   Add Doctor Modal
+=========================== */
+
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.modal-content{
+    width:650px;
+    max-height:90vh;
+    overflow-y:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.modal-content h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#0d6efd;
+}
+
+.modal-content input,
+.modal-content textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus{
+    border-color:#0d6efd;
+}
+
+.modal-content textarea{
+    height:90px;
+    resize:none;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:20px;
+}
+
+.modal-buttons button{
+    width:150px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.modal-buttons button:first-child{
+    background:#0d6efd;
+    color:white;
+}
+
+.modal-buttons button:first-child:hover{
+    background:#0b5ed7;
+}
+
+.cancel-btn{
+    background:#dc3545 !important;
+    color:white;
+}
+
+.cancel-btn:hover{
+    background:#bb2d3b !important;
+}

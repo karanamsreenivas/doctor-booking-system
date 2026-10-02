@@ -1,0 +1,55 @@
+.doctor-dashboard{
+    min-height:100vh;
+    background:#f5f7fb;
+    padding:40px;
+}
+
+.doctor-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.doctor-header h1{
+    font-size:40px;
+    color:#0d6efd;
+}
+
+.doctor-header p{
+    color:#666;
+    margin-top:10px;
+}
+
+.doctor-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.doctor-card{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    text-decoration:none;
+    color:#222;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.doctor-card:hover{
+    transform:translateY(-8px);
+}
+
+.doctor-icon{
+    font-size:55px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.doctor-card h2{
+    margin-bottom:12px;
+}
+
+.doctor-card p{
+    color:#666;
+}
